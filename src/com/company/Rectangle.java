@@ -17,12 +17,5 @@ public class Rectangle {
         return (a1+a2)*2;
     }
 
-    public int squareArea(){
-        return a1*a1;
-    }
-
-    public int squarePerimeter(){
-        return a1*4;
-    }
 }
 

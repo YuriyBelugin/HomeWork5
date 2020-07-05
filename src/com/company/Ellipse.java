@@ -1,32 +1,20 @@
 package com.company;
 
 public class Ellipse {
-    int small;
-    int big;
-    int radius;
+    int smallSemiaxis;
+    int bigSemiaxis;
 
-    public Ellipse(int small, int big) {
-        this.small = small;
-        this.big = big;
-    }
-
-    public Ellipse(int radius) {
-        this.radius = radius;
+    public Ellipse(int smallSemiaxis, int bigSemiaxis) {
+        this.smallSemiaxis = smallSemiaxis;
+        this.bigSemiaxis = bigSemiaxis;
     }
 
     public double areaEllipse(){
-        return  small*big*Math.PI;
+        return  smallSemiaxis*bigSemiaxis*Math.PI;
     }
 
     public double perimeterEllipse(){
-        return (Math.PI*small*big+(small-big))/(small+big)*4;
+        return (Math.PI*smallSemiaxis*bigSemiaxis+(smallSemiaxis-bigSemiaxis))/(smallSemiaxis+bigSemiaxis)*4;
     }
 
-    public double areaCircle(){
-        return Math.PI*(radius*radius);
-    }
-
-    public double perimeterCircle(){
-        return 2*Math.PI*radius;
-    }
 }

@@ -11,11 +11,11 @@ public class Main {
 
         System.out.println("Площадь прямоугольника " + rectangle.area());
         System.out.println("Периметр прямоугольника " + rectangle.perimeter());
-        System.out.println("Площадь квадрата " + square.squareArea());
-        System.out.println("Периметр квадрата " + square.squarePerimeter());
+        System.out.println("Площадь квадрата " + square.area());
+        System.out.println("Периметр квадрата " + square.perimeter());
         System.out.println("Площадь эллипса " + ellipse.areaEllipse());
         System.out.println("Периметр эллипса " + ellipse.perimeterEllipse());
-        System.out.println("Площадь окружности " + circle.areaCircle());
-        System.out.println("Периметр окружности " + circle.perimeterCircle());
+        System.out.println("Площадь окружности " + circle.areaEllipse());
+        System.out.println("Периметр окружности " + circle.perimeterEllipse());
     }
 }
